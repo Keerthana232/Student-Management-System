@@ -54,7 +54,7 @@ public class StudentManagementSystem {
                     String grade = sc.nextLine();
 
                     students.add(new Student(id, name, age, grade));
-                    System.out.println("✅ Student added successfully!");
+                    System.out.println("Student added successfully!");
                     break;
 
                 case 2:
@@ -74,14 +74,14 @@ public class StudentManagementSystem {
                     boolean found = false;
                     for (Student s : students) {
                         if (s.id == searchId) {
-                            System.out.println("🎯 Student Found:");
+                            System.out.println("Student Found:");
                             s.display();
                             found = true;
                             break;
                         }
                     }
                     if (!found)
-                        System.out.println("❌ Student not found!");
+                        System.out.println("Student not found!");
                     break;
 
                 case 4:
@@ -96,14 +96,14 @@ public class StudentManagementSystem {
                     }
                     if (toRemove != null) {
                         students.remove(toRemove);
-                        System.out.println("🗑️ Student removed successfully!");
+                        System.out.println("Student removed successfully!");
                     } else {
-                        System.out.println("❌ Student not found!");
+                        System.out.println("Student not found!");
                     }
                     break;
 
                 case 5:
-                    System.out.println("👋 Exiting... Thank you!");
+                    System.out.println("Exiting... Thank you!");
                     break;
 
                 default:
@@ -114,3 +114,4 @@ public class StudentManagementSystem {
         sc.close();
     }
 }
+
